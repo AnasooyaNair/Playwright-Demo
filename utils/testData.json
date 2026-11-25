@@ -1,0 +1,94 @@
+{
+    "signupData": [
+        {
+            "scenario": "Signup with new valid user",
+            "usernamePrefix": "ExistingUser",
+            "password": "ExistingPassword",
+            "expectedMessage": "Sign up successful."
+        },
+        {
+            "scenario": "Signup and click Close",
+            "usernamePrefix": "CloseUser",
+            "password": "Test@456"
+        }
+    ],
+
+    "loginData": [
+        {
+            "scenario": "Valid username and valid password",
+            "usernamePrefix": "ExistingUser",
+            "password": "ExistingPassword",
+            "expectedMessage": ""
+        },
+        {
+            "scenario": "Invalid username and valid password",
+            "username": "InvalidUser123",
+            "password": "ExistingPassword",
+            "expectedMessage": "User does not exist."
+        },
+        {
+            "scenario": "Valid username and invalid password",
+            "usernamePrefix": "ExistingUser",
+            "password": "WrongPassword123",
+            "expectedMessage": "Wrong password."
+        },
+        {
+            "scenario": "Invalid username and invalid password",
+            "username": "InvalidUser123",
+            "password": "WrongPassword123",
+            "expectedMessage": "User does not exist."
+        }
+    ],
+
+    "cartData": [
+    {
+        "scenario": "Login and add a product to cart",
+        "usernamePrefix": "CartUser",
+        "password": "CartUserPassword",
+        "category": "Phones",
+        "product": "Samsung galaxy s6",
+        "price": "360",
+        "expectedMessageSignup": "Sign up successful.",
+        "expectedMessage": "Product added."
+    }
+    ],
+
+    "purchaseData": [
+    {
+        "scenario": "Purchase Phone",
+        "usernamePrefix": "PurchaseUser",
+        "password": "PurchaseUserPassword",
+        "category": "Phones",
+        "product": "Samsung galaxy s6",
+        "price": "360",
+        "expectedAmount": "360 USD",
+        "expectedCard": "123456",
+        "expectedName": "Anasooya",
+        "expectedMessageSignup": "Sign up successful.",
+        "expectedMessageProductToCart": "Product added.",
+        "expectedMessage": "Thank you for your purchase!"
+    },
+    {
+        "scenario": "Purchase Monitor",
+        "usernamePrefix": "PurchaseUserMonitor",
+        "password": "PurchaseUserMonitorPassword",
+        "category": "Monitors",
+        "product": "Apple monitor 24",
+        "price": "400",
+        "expectedAmount": "400 USD",
+        "expectedCard": "24680",
+        "expectedName": "Anasooya",
+        "expectedMessageSignup": "Sign up successful.",
+        "expectedMessageProductToCart": "Product added.",
+        "expectedMessage": "Thank you for your purchase!"
+    }
+  ],
+  "logoutData": [
+    {
+      "scenario": "Logout after successful login",
+      "usernamePrefix": "LogoutUser",
+      "password": "LogoutPassword123",
+      "expectedMessageSignup": "Sign up successful."
+    }
+  ]
+}

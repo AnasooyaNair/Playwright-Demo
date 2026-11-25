@@ -1,0 +1,4 @@
+Sign up successful.
+Scenario: Valid username and valid password
+Username entered: ExistingUser1795519517961
+Password entered: ExistingPassword

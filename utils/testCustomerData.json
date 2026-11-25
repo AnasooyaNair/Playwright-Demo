@@ -1,0 +1,12 @@
+{
+    "customerData": [
+        {
+        "customerName": "Anasooya",
+        "country": "India",
+        "city": "Kochi",
+        "card": "123456",
+        "month": "November",
+        "year": "2026"
+        }
+    ]
+}

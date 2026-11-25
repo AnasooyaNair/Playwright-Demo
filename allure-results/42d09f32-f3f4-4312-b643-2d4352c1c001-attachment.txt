@@ -1,0 +1,2 @@
+Sign up successful.
+Wrong password.

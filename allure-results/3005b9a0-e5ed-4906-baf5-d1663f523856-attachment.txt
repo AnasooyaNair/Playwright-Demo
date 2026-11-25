@@ -1,0 +1,4 @@
+Scenario: Valid username and invalid password
+Username entered: ExistingUser1795519668878
+Password entered: WrongPassword123
+Wrong password.
